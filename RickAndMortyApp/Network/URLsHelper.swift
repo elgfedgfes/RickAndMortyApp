@@ -19,4 +19,15 @@ enum Endpoint: String {
 class URLsHelper {
     static let rickAndMortyCharacters = (APIBasePath.base.rawValue + Endpoint.characters.rawValue)
     static let rickAndMortyEpisodes = (APIBasePath.base.rawValue + Endpoint.episodes.rawValue)
+    
+    func appendNameQueryParameter(url: String, name: String) -> String {
+        guard var urlComponents = URLComponents(string: url + "/") else {
+            return url
+        }
+        urlComponents.queryItems = [URLQueryItem(name: "name", value: name)]
+        guard let nonNilURL = urlComponents.url else {
+            return url
+        }
+        return nonNilURL.absoluteString
+    }
 }

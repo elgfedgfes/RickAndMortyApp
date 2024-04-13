@@ -27,7 +27,7 @@ class EpisodesViewModel {
     }
     
     func getFilterEpisodes(searchText: String) {
-        let filterUrl = URLsHelper.rickAndMortyEpisodes + "/?name=\(searchText)"
+        let filterUrl = URLsHelper().appendNameQueryParameter(url: URLsHelper.rickAndMortyEpisodes, name: searchText)
         makeEpisodeRequest(urlRequest: filterUrl)
     }
     

@@ -27,7 +27,7 @@ class CharactersViewModel {
     }
     
     func getFilterCharacters(searchText: String) {
-        let filterUrl = URLsHelper.rickAndMortyCharacters + "/?name=\(searchText)"
+        let filterUrl = URLsHelper().appendNameQueryParameter(url: URLsHelper.rickAndMortyCharacters, name: searchText)
         makeCharacterRequest(urlRequest: filterUrl)
     }
     
