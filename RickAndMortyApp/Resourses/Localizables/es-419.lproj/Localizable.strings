@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  RickAndMortyApp
+
+  Created by Luis Fernando Sánchez Palma on 13/04/24.
+  
+*/
+
+"Network.message.error" = "%@\n\nCódigo de error: %@";
+"Network.message.unknown" = "Error desconocido, por favor inténtalo más tarde.";
+"Network.message.badURL" = "URL inválido, por favor inténtalo más tarde.";
+"Network.message.badResponseBody" = "El cuerpo de la respuesta es incorrecto, por favor inténtalo más tarde.";
+"Network.message.badRequestBody" = "El cuerpo de la petición es incorrecto, por favor inténtalo más tarde.";
+"Network.message.noInternet" = "No tienes conexión a internet, por favor inténtalo más tarde.";
+
+"Alerts.title" = "Error";
+"Alerts.action.retry" = "Intentar de nuevo";
